@@ -66,7 +66,7 @@ export default function PhotosUploader({ addedPhotos, onChange }) {
             <div className="h-32 flex relative" key={link}>
               <img
                 className="rounded-2xl w-full object-cover"
-                src={"http://localhost:4000/uploads/" + link}
+                src={"https://booking-ia3g.onrender.com/uploads/" + link}
                 alt=""
               />
               <button
