@@ -32,10 +32,7 @@ export default function PlaceGallery({ place }) {
           {place?.photos?.length > 0 &&
             place.photos.map((photo) => (
               <div className="flex justify-center">
-                <img
-                  src={`https://booking-ia3g.onrender.com/uploads/${photo}`}
-                  alt=""
-                />
+                <img src={`http:localhost:4000/uploads/${photo}`} alt="" />
               </div>
             ))}
         </div>
@@ -50,7 +47,7 @@ export default function PlaceGallery({ place }) {
             <div className="aspect-square object-cover ">
               <img
                 onClick={() => setShowAllPhotos(true)}
-                src={`https://booking-ia3g.onrender.com/uploads/${place.photos[0]}`}
+                src={`http:localhost:4000/uploads/${place.photos[0]}`}
                 alt=""
                 className="rounded-2xl cursor-pointer hover:scale-105"
               />
@@ -61,7 +58,7 @@ export default function PlaceGallery({ place }) {
           {place.photos?.[1] && (
             <img
               onClick={() => setShowAllPhotos(true)}
-              src={`https://booking-ia3g.onrender.com/uploads/${place.photos[1]}`}
+              src={`http:localhost:4000/uploads/${place.photos[1]}`}
               className="aspect-square object-cover cursor-pointer rounded-2xl hover:scale-105"
               alt=""
             />
@@ -70,7 +67,7 @@ export default function PlaceGallery({ place }) {
             {place.photos?.[2] && (
               <img
                 onClick={() => setShowAllPhotos(true)}
-                src={`https://booking-ia3g.onrender.com/uploads/${place.photos[2]}`}
+                src={`http:localhost:4000/uploads/${place.photos[2]}`}
                 className="aspect-square object-cover relative cursor-pointer rounded-2xl hover:scale-105"
                 alt=""
               />
